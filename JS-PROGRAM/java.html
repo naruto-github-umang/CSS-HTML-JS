@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <style>
+         
+    </style>
+</head>
+<body>
+    <form action="" method="get">
+        <table border="2" align="content" style="margin: 10%;">
+        <tr>
+            <td>
+            <label for="full_name">user Name:</label>
+            <input onmouseover="checkvalid()" onblur="checkvalid()" placeholder="insert name" id="username" required>
+                <span id = "usenamerror" ></span>
+        </td>
+         </tr> <br>
+
+         <script>
+            function checkvalid(kucbhi,spnid){
+                usernameval = document.getElementById ("username") 
+            console.log(usernameval);
+            console.log(usernameval.value);
+            console.log(kucbhi);
+            console.log(spnid);
+
+            if (kucbhi=="")
+             {
+                document.getElementById(spnid).innerHTML="<b>this field  is requared </b>"
+                
+            }
+            }
+         </script> 
+         
+
+         <tr>
+            <td>
+                <label for="full_name">password</label>
+                <input onblur="checkvalid()" placeholder="insert password" name="pass" required>
+                <span id="passerror"></span>
+        </td>
+         </tr> <br>
+         <tr>
+            <td>
+                <label for="full_name">Email</label>
+                <input onblur="checkvalid()" placeholder="insert email"  required>
+             </td>
+         </tr> <br>
+         <tr>
+            <td>
+                <label for="full_name">Gender</label>
+                <input onblur="checkvalid()"type="radio"name="Gender" value="male"  required>male
+                <input onblur="checkvalid()"type="radio" name="Gender"value="female"   required>female 
+             </td>
+         </tr> <br>
+         <tr>
+            <td>            <input type="submit" name="" value="save" required>
+            </td>
+
+         </tr>
+        
+    </table>
+    </form>
+</body>
+</html>

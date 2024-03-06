@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up form -Form 2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-size: 16px;
+            background: #f9f9f9;
+            padding: 20px 20px;
+
+        }
+        form{
+            width: 450px;
+
+            background: #fff;
+            padding: 40px 40px 50px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            margin:  10px auto ;
+        }
+        hr{
+            height: 4px;
+            background: #000;
+            margin: auto;
+        }
+        input{
+            border: 1px solid teal;
+            border-radius: 5px;
+            padding: 5px 10px;
+            font-size: 15px;
+        }
+        input:focus{
+            outline: none;
+        }
+        span{
+            color: red;
+        }
+        .header{
+            margin-left: 2rem;
+        }
+        .F-1,.O-1,.E-1,.W-1,.H-1,.Z-1{
+            font-size: 16px;
+            padding:  20px 0 0;
+            margin-left: -25px;
+            display:inline;
+       
+        }
+        .width-1{
+            box-sizing: border-box;
+            width: 8rem;
+            padding: 8px 12px 8;
+        }
+        .width-2,.width-3{
+            box-sizing: border-box;
+            width: 16rem;
+            padding: 8px 12px 8;
+        }
+        .width-4,.width-5,.width-6,.width-7{
+            box-sizing: border-box;
+            width: 10rem;
+            padding: 8px 12px 8;
+        }
+        .width-5,.w-5{
+            box-sizing: border-box;
+            width: 10rem;
+            padding: 8px 12px 8;
+        }
+        .C-1,.F-2,.A-1,.A-2,.C-2,.S-1,.C-3{
+            font-size: 16px;
+            padding:  20px 0 0;
+            margin-left: -25px;
+            display: inline;
+    
+        }
+        .w-15,.w-16{
+            width: 20rem;
+        }
+        .justify-between{
+            display: flex;
+            justify-content: space-between;
+             box-sizing: border-box;
+            width: 18rem;
+            padding: 10px 1px ;
+        }
+        .submitbtn{
+            font-size: 15px;
+            padding: 2px 10px;
+        }
+    </style>
+</head>
+<body>
+   
+    <form >
+        <div class="header">
+            <h1>Sign Up:</h1>
+        </div>
+        <hr>
+        <br>
+        <table>
+            <tr>
+                <td><label for="fullname" class="F-1">First, Last Name<span>*</span>:</label></td>
+                <td>
+                    <input class="width-1" type="text" id="fullname" placeholder="First name" required>
+                    <input class="width-1" type="text" id="fullname2" placeholder="last name">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="orgamization" class="O-1">Orgamization:</label></td>
+                <td><input class="width-2" type="text" id="orgamization"></td>
+            </tr>
+            <br>
+            <tr>
+                <td><label for="email" class="E-1">Email Address:<span>*</span>:</label></td>
+                <td><input class="width-3" type="text" id="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="work-phone" class="W-1">Work Phone:</label></td>
+                <td><input class="width-4" type="number" name="work-phone" id="work-phone" required></td>
+            </tr>
+            <tr>
+                <td><label for="house-phone" class="H-1">house Phone:</label></td>
+                <td><input class="width-5" type="number" name="house-phone" id="house" required></td>
+            </tr>
+            <tr>
+                <td><label for="cell-phone" class="C-1">cell Phone:</label></td>
+                <td><input class="width-6" type="text" name="cell-phone" id="cell-phone" required></td>
+            </tr>
+            <tr>
+                <td><label for="fax" class="F-2">Fax:</label></td>
+                <td><input class="width-7" type="text" name="fax" id="fax"></td>
+            </tr>
+            <tr>
+                <td><label for="address-1" class="A-1">Address 1<span>*</span>:</label></td>
+                <td><input class="w-15" type="text" name="address-1" id="address-1" required></td>
+            </tr>
+            <tr>
+                <td><label for="address-2" class="A-2">Address 2:</label></td>
+                <td><input class="w-16" type="text" name="address-2" id="address-2"></td>
+            </tr>
+            <tr>
+                <td><label for="city"class="C-2">City<span>*</span>:</label></td>
+                <td><input  type="text" name="city" id="city" required></td>
+            </tr>
+            <tr>
+                <td><label for="state" class="S-1">State Province:</label></td>
+                <td><input type="text" name="state" id="state"></td>
+            </tr>
+            <tr>
+                <td><label for="zip-code" class="Z-1">Zip Postal Code:</label></td>
+                <td><input class="w-5" type="text" name="zip-code" id="zip-code" required></td>
+            </tr>
+            <tr>
+                <td><label for="country" class="C3">Country<span>*</span>:</label></td>
+                <td><input  type="text" name="country" id="country" required></td>
+            </tr>
+            <tr>
+                <td>Required fields:</td>
+                <td class="justify-between w-10">
+                    <button type="submit" class="submitbtn">Submit</button>
+                    <a href="#">form</a>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    
+</body>
+</html>
